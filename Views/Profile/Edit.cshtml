@@ -1,0 +1,22 @@
+﻿@using SD2.Models.View
+@model EditProfileViewModel
+
+<form>
+
+    <h2> Edit profile </h2>
+
+    <input type="hidden" asp-for="Id" />
+
+    <label>
+        First Name
+        <input type="text" asp-for="FirstName" />
+    </label>
+
+    <label>
+        Last Name
+        <input type="text" asp-for="LastName" />
+    </label>
+
+    <button type="submit"> Save </button>
+
+</form>

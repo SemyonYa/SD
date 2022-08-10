@@ -1,0 +1,32 @@
+﻿@using SD2.Models.View
+@model EditClientViewModel
+
+<form>
+
+    <h2> Edit Client </h2>
+
+    <input type="hidden" asp-for="Id" />
+
+    <label>
+        First Name
+        <input type="text" asp-for="FirstName" />
+    </label>
+
+    <label>
+        Last Name
+        <input type="text" asp-for="LastName" />
+    </label>
+
+    <label>
+        Age
+        <input type="number" asp-for="Age" />
+    </label>
+
+    <label>
+        Is Active
+        <input type="checkbox" asp-for="IsActive" />
+    </label>
+
+    <button type="submit"> Save </button>
+
+</form>
